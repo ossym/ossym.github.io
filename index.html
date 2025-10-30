@@ -2,60 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>WK SMM Panel – Affordable & Reliable SMM Services</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="WK SMM is an affordable and reliable SMM panel for resellers, agencies, and creators. Real-time performance, secure payments, 24/7 support." />
-  <link rel="canonical" href="https://wksmm.com/" />
-  <meta name="robots" content="index,follow" />
+  <title>WKSMM Panel — Affordable & Reliable SMM Services</title>
+  <meta name="description" content="WKSMM is an affordable, reliable SMM panel for resellers, agencies, and creators. Real-time performance, secure payments, 24/7 human support." />
+  <!-- مهم: بغينا الصفحة بنفسها تتأرشف -->
+  <link rel="canonical" href="https://ossym.github.io/">
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="WK SMM Panel – Affordable & Reliable" />
-  <meta property="og:description" content="Real-time performance, secure payments, 24/7 support. Reseller-ready." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ossym.github.io/" />
-  <meta property="og:image" content="https://ossym.github.io/og-cover.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ossym.github.io/">
+  <meta property="og:title" content="WKSMM Panel — Affordable & Reliable">
+  <meta property="og:description" content="Real-time performance, secure payments, and 24/7 support. Reseller-ready.">
+  <meta property="og:image" content="https://ossym.github.io/og-cover.jpg">
 
-  <!-- JSON-LD: Organization + Website -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WKSMM Panel — Affordable & Reliable">
+  <meta name="twitter:description" content="Fast, real, and reliable social growth tools for resellers and creators.">
+  <meta name="twitter:image" content="https://ossym.github.io/og-cover.jpg">
+
+  <!-- JSON-LD: Organization + Website + small FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
-    "name":"WK SMM",
+    "name":"WKSMM",
     "url":"https://wksmm.com/",
     "logo":"https://wksmm.com/logo.png",
     "sameAs":[
       "https://www.behance.net/gallery/237530769/WKSMM-Panel-Affordable-Reliable-SMM-Panel",
-      "https://medium.com/@YOURMEDIUM",
-      "https://www.linkedin.com/company/YOURPAGE"
+      "https://x.com/wksmm",
+      "https://www.linkedin.com/company/wksmm"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"WK SMM Pages",
+    "url":"https://ossym.github.io/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://wksmm.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What is WKSMM Panel?",
+        "acceptedAnswer":{"@type":"Answer","text":"An SMM panel for resellers, agencies, and creators offering real-time order tracking, secure global payments, and 24/7 support."}
+      },
+      {
+        "@type":"Question",
+        "name":"Is WKSMM suitable for resellers?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes, it is reseller-ready with transparent pricing and automation-friendly workflows."}
+      }
     ]
   }
   </script>
 
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;margin:0;background:#0f172a;color:#e2e8f0}
-    .wrap{max-width:760px;margin:64px auto;padding:0 20px}
-    .card{background:#111827;border:1px solid #1f2937;border-radius:16px;padding:28px}
-    a{color:#60a5fa;text-decoration:none} a:hover{text-decoration:underline}
-    .btn{display:inline-block;background:#22c55e;color:#0b1220;padding:12px 18px;border-radius:12px;font-weight:700}
+    :root{--bg:#0b1220;--card:#0f172a;--text:#e2e8f0;--muted:#94a3b8;--brand:#22c55e;--link:#60a5fa}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:960px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;gap:16px;padding:20px 0}
+    header img{width:40px;height:40px}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:28px;margin-top:12px}
+    h1{font-size:clamp(28px,4vw,40px);margin:0 0 8px}
+    h2{font-size:clamp(20px,3vw,26px);margin:20px 0 8px}
+    .lead{color:var(--muted);margin:0 0 16px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 8px}
+    .btn{display:inline-block;background:var(--brand);color:#041016;padding:12px 18px;border-radius:12px;font-weight:700}
+    .btn.secondary{background:#111827;color:var(--text);border:1px solid #1f2937}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:800px){.grid{grid-template-columns:1.2fr .8fr}}
+    figure{margin:0}
+    img{max-width:100%;height:auto;border-radius:14px}
+    footer{color:var(--muted);font-size:14px;padding:24px 0}
+    ul.features{padding-left:18px;margin:8px 0 0}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="card">
-      <h1>WK SMM Panel</h1>
-      <p>Affordable & reliable <strong>SMM panel</strong> for resellers, agencies, and creators. Real-time performance, secure global payments, and 24/7 human support.</p>
+  <header class="wrap" role="banner">
+    <img src="https://wksmm.com/logo.png" alt="WK SMM logo" loading="lazy" width="40" height="40">
+    <strong>WK SMM Panel</strong>
+  </header>
 
-      <!-- 🚨 هذا هو الــ DOFOLLOW backlink: مخلّيه بدون rel="nofollow" -->
-      <p>
-        Try it here →
-        <a class="btn" href="https://wksmm.com" target="_blank">wksmm.com</a>
-      </p>
+  <main class="wrap" role="main">
+    <section class="card grid" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Affordable & Reliable SMM Panel for Resellers and Creators</h1>
+        <p class="lead">Real-time performance, secure global payments, and 24/7 human support. Built for scale and transparency.</p>
+        <div class="cta">
+          <a class="btn" href="https://wksmm.com" target="_blank">Visit wksmm.com</a>
+          <a class="btn secondary" href="https://www.behance.net/gallery/237530769/WKSMM-Panel-Affordable-Reliable-SMM-Panel" target="_blank" aria-label="Open Behance case study">Behance case study</a>
+        </div>
+        <h2>Key features</h2>
+        <ul class="features">
+          <li>Real-time order tracking &amp; performance analytics</li>
+          <li>Secure global payments</li>
+          <li>24/7 human support</li>
+          <li>Reseller-ready dashboard and pricing</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="https://ossym.github.io/og-cover.jpg" alt="WKSMM Panel interface preview" width="800" height="520" loading="lazy" decoding="async">
+      </figure>
+    </section>
 
-      <p>See the visual case study on Behance:
-        <a href="https://www.behance.net/gallery/237530769/WKSMM-Panel-Affordable-Reliable-SMM-Panel" target="_blank">Behance project</a>.
-      </p>
-    </div>
+    <section class="card" aria-labelledby="faq">
+      <h2 id="faq">FAQ</h2>
+      <details>
+        <summary>What is an SMM panel?</summary>
+        <p>An SMM panel is a platform that centralizes social media growth services with automated ordering, tracking, and reporting.</p>
+      </details>
+      <details>
+        <summary>Do you support resellers?</summary>
+        <p>Yes, WKSMM is designed for resellers with transparent pricing and bulk workflows.</p>
+      </details>
+    </section>
   </main>
+
+  <footer class="wrap" role="contentinfo">
+    <p>© <span id="y"></span> WKSMM — Open-source credits on <a href="https://ossym.github.io/" aria-label="GitHub Pages home">GitHub Pages</a>.</p>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </footer>
 </body>
 </html>
